@@ -1,3 +1,4 @@
+import { carregaTarefa } from "./carregaTarefa.js"
 import BotaoConclui from "./concluiTarefa.js"
 import BotaoDeleta from "./deletaTarefa.js"
 
@@ -26,6 +27,8 @@ import BotaoDeleta from "./deletaTarefa.js"
     localStorage.setItem("tarefas",JSON.stringify(tarefasAtualizadas))
 
     input.value = ""
+
+    carregaTarefa()
     
     }
 
